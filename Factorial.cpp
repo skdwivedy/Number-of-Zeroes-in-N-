@@ -3,17 +3,12 @@
 using namespace std;
 int main()
 {
-    unsigned long N,t,cont;//The numbers t follow And Number of numbers
-    cout<<"How many Entries : ";
+    unsigned long N,t,cont;//The numbers to follow And Number of numbers and Number of Zeroes
+    cout<<"How many Entries : ";//The number of number in which we are going to find the zeroes
     cin>>t;
     for(long i=0;i<t;i++)
     {
         cin>>N;
-        while(N<1 || N> 1000000000)
-        {
-            //cout<<"Wrong Input (Out of Range!!! /n Enter new number";
-            cin>>N;
-        }
         while(N!=0)
         {
             N=N/5;
